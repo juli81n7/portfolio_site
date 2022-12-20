@@ -376,6 +376,32 @@ grid-template-columns: 1fr 1fr;
 transition: 0.2s ease;
 }
 
+
+.img_container{
+overflow: hidden;
+transition: 0.2s;
+}
+
+.img_container :hover {
+  scale: 1.1;
+  transition: 0.2s;
+cursor: pointer;
+}
+
+img{
+  transition: 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
 .linje1{
   margin-top: 0;
   margin-bottom: 0;
