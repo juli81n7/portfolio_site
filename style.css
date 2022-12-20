@@ -166,10 +166,11 @@ h1{
     font-weight: 700;
     font-style: normal;
     font-size: 8rem;
-margin: 0;
+text-transform: uppercase;
+margin: auto;
 }
 .heading_img_wrapper{
-  height: 650px;
+  height: 500px;
 }
 
 .heading_wrapper{
@@ -179,18 +180,11 @@ margin: 0;
   border-bottom: #191919 solid 1.5px;
   border-top: #191919 solid 1.5px;
 padding: 0;
-
 }
 
 .heading_text{
-  display: flex;
-position: relative;
-display: block;
-  text-transform: uppercase;
 animation-name: reel;
-animation-timing-function: linear;
-animation-duration: 8s;
-animation-iteration-count: infinite;
+animation-duration: 5s;
 }
 
 
