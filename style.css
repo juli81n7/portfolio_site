@@ -49,7 +49,6 @@ transition: 0.5s;
     align-items: center;
     padding: 0 24px;
     border-bottom: #191919 solid 1.5px;
-    
 
   }
   
@@ -312,6 +311,7 @@ user-select: none;
 
 
 .tema{
+  margin-top: 10rem;
   border-bottom: #191919 solid 1.5px;
   padding-bottom: 5rem;
 }
@@ -401,7 +401,6 @@ img{
 
 
 
-
 .linje1{
   margin-top: 0;
   margin-bottom: 0;
@@ -424,3 +423,5 @@ top: 0;
 left: 33.5%;
 
 }
+
+

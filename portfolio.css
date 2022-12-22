@@ -1,0 +1,36 @@
+h1{
+    margin-top: 70px;
+    font-size: 7rem;
+}
+
+.headline_wrapper{
+    border: #191919 solid 1.5px;
+    height: 800px;
+    overflow: hidden;
+    width: 100%;
+
+
+}
+
+.headline{
+    display: flex;
+
+    position: absolute;
+    animation-name: reel;
+    animation-duration: 5s;
+    line-break:normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+
+@keyframes reel{
+    from{
+        left:100%
+    }
+    to {
+        left:-100%;
+    }
+}
