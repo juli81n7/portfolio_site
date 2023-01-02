@@ -303,21 +303,41 @@ h2{
   
 
  a button{
+  display: flex;
 padding: 0.6rem 1rem 0.6rem 1rem;
 text-align: center;
 font-family: roc-grotesk,sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-size: 1rem;
 background-color: transparent;
 border: #191919 solid 1.5px;
-border-radius: 0.6rem;
-margin-bottom: 2rem;
+color: #191919;
+  padding: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 0rem;
+  border-radius: 20px;
+  transition: 0.2s ease;
+cursor: pointer;
+margin-top: 1rem;
+}
 
-  }
+a svg{
+  margin-top: -3.5rem;
+  rotate: 135deg;
+  margin-left: -3rem;
+  margin-bottom: -3.7rem;
+  margin-right: -3.7rem;
+visibility: hidden;
+}
 
-  button :hover{
-    background-color: #191919;
-    padding-left: 5;
+button :hover svg{
+  visibility:visible;
+}
+
+  button:hover{
+    background-color: #191919; 
+    padding-right: 1rem;
+    color: #f7f6f1;
   }
   
   .item{
