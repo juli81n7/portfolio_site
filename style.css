@@ -91,7 +91,7 @@ color: #191919;
       font-family: roc-grotesk-extrawide,sans-serif;
     font-weight: 100;
       font-style: normal;
-      color: var(--primary);
+      color:#f7f6f1;
       font-size: 2rem;
     }
   
@@ -102,6 +102,7 @@ color: #191919;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+      background-color: #191919;
     }
     .bar2 {
       display: block;
@@ -110,6 +111,7 @@ color: #191919;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+      background-color: #191919;
     }
     .bar3 {
       display: block;
@@ -118,38 +120,49 @@ color: #191919;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+      background-color: #191919;
     }
   
     .bar2.active {
       opacity: 0;
     }
   
-    .bar1 .active {
+    .bar1.active {
       transform: translateY(8px) rotate(45deg);
     }
   
-    .bar3 .active {
-      transform: translateY(-8px) rotate(-45deg);
+    .bar3.active {
+      transform: translateY(-8px)  rotate(-45deg); 
+
     }
   
     .nav-menu {
       position: fixed;
       transform: translatex();
-      left: -100%;
-      top: 70px;
+      left: -130%;
+      top: 50px;
       gap: 0;
       flex-direction: column;
       background-color:#191919;
       width: 100%;
       text-align: center;
+      transition: 0.3s;
+      padding-left: 0;
     }
   
     .nav-item {
       margin: 16px;
     }
   
+    .nav-item a {
+      color: #f7f6f1;
+    }
+  
+
+  
     .nav-menu.active {
       left: 0;
+      transition: 0.3s ease-in-out;
     }
   }
 
