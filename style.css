@@ -242,8 +242,7 @@ h2{
     overflow-x: scroll;
     scroll-behavior:smooth;
     border-bottom:#191919 solid 1.5px;
-    cursor:url(move.svg),auto;
-    -webkit-overflow-scrolling: touch;
+    cursor:url(move_white.svg),auto;
 }
     
   
@@ -255,14 +254,17 @@ h2{
     aspect-ratio: 50 / 79;
     font-size: 2rem;
     overflow: hidden;
-    cursor: pointer;
+    cursor:url(move_white.svg),auto;
+
 }
 
 
 
-
+.one{
+  background-color:#191919;
+}
 .second{
-    background-image: url(projekt_1.png);
+background-color: #769acf;
     background-size: cover;
     background-position: center;
 
@@ -344,7 +346,7 @@ button :hover svg{
     display:flex;
     flex-direction:column;
     justify-content: end;
-    background-color:#191919;
+
   }
 
 .image_container img{
