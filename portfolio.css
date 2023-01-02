@@ -14,15 +14,37 @@ h1{
 
 .headline{
     display: flex;
+overflow: hidden;
 
+
+}
+
+.headline h1{
+    display: flex;
+    gap: 6rem;
+}
+
+.headline h1 span{
     position: absolute;
+    left: 100%;
     animation-name: reel;
-    animation-duration: 5s;
-    line-break:normal;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
 }
+
+.span2{
+    animation-delay: 2.5s;
+}
+
+.span3{
+    animation-delay: 5s;
+}
+.span4{
+    animation-delay: 7.5s;
+}
+
 
 
 
@@ -31,6 +53,12 @@ h1{
         left:100%
     }
     to {
-        left:-100%;
+        left:-50%;
     }
+}
+
+
+
+.overskrift{
+    overflow: hidden;
 }
