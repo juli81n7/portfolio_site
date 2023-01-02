@@ -1,3 +1,8 @@
+*{
+margin: 0;
+}
+
+
 img{
     width: 100%;
 box-sizing: border-box;
@@ -210,11 +215,9 @@ h2{
     font-weight: 700;
     font-style: normal;
   font-size: 4rem;
-    margin-left: 53%;
-    margin-bottom: -8px;
-    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
     text-align: end;
-    margin-top: 4rem;
 }
 
 
@@ -226,7 +229,7 @@ h2{
 .wrapper{
     display: flex;
     gap: 20px;
-    margin-left: 222px;
+    margin-left: 2rem;
     margin-bottom: 70px;
     z-index: 1;
     margin-right: 5rem;
@@ -248,7 +251,7 @@ h2{
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    height: 750px;
+    height: 600px;
     aspect-ratio: 50 / 79;
     font-size: 2rem;
     overflow: hidden;
@@ -269,11 +272,13 @@ h2{
     background-image: url(projekt_3.png);
     background-size: cover;
     background-position: center;
+
 }
 .fourth{
     background-image: url(projekt_4.png);
     background-size: cover;
     background-position: center;
+
 }
 .fith{
     background-image: url(projekt_5.png);
@@ -324,15 +329,16 @@ margin-bottom: 2rem;
 
 .image_container img{
   position: relative;
-  left: -180px;
+  left: -40%;
   top: 160px;
 rotate: -20deg;
   width: 250%;
+  padding-bottom: 2rem;
 }
 
 .item :hover img{
   rotate: 0deg;
-  left: -350px;
+  left: -73%;
 }
 
 
@@ -340,7 +346,7 @@ rotate: -20deg;
  
   .item h3{
 margin: 0;
-margin-left: -2rem;
+font-size: 2rem;
     color:#f7f6f1;
     font-family: roc-grotesk,sans-serif;
     font-weight: 400;
@@ -357,16 +363,26 @@ user-select: none;
   color:#f7f6f1;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
-    font-size: 1.2rem;
-    margin-right: 30%;
+    font-size: 1rem;
     user-select: none;
     margin-top: 0;
 }
 
 
 
+
+
+
+/******* tema-section ************/
+
+
+
+
+
+
+
 .tema{
-  margin-top: 10rem;
+  margin-top: 5rem;
   border-bottom: #191919 solid 1.5px;
   padding-bottom: 5rem;
 }
@@ -375,13 +391,17 @@ user-select: none;
 .tema p{
   font-family: roc-grotesk,sans-serif; 
 text-align: end;
-margin-right: 2rem;
+margin-right: 5rem;
 margin-top: -1rem;
 }
 
+.overskrift p{
+  margin-top: -3rem;
+
+}
 
 .tema_indhold{
-margin-top: 5rem;
+margin-top: 2rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
@@ -415,12 +435,15 @@ margin-bottom: auto;
   border-radius: 20px;
   font-size: 1rem;
   transition: 0.2s ease;
+margin: 0;
 }
 
 
 .categories{
   display: flex;
-  
+justify-content: end;
+gap: 1rem;
+margin-right: 5rem;
 }
 
 .categories :hover{
@@ -433,6 +456,12 @@ transition: 0.2s ease;
 .img_container{
 overflow: hidden;
 transition: 0.2s;
+background-color: #191919;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  border-radius: 1rem;
 }
 
 .img_container :hover {
@@ -447,35 +476,12 @@ img{
 
 
 
-
-
-
-
-
-
-
-.linje1{
-  margin-top: 0;
-  margin-bottom: 0;
-height: 70px;
-width: 1.5px;
-background-color: #191919;
-position: fixed;
-top: 0;
-left: 82%;
-
+.pin{
+  width: 150%;
 }
-.linje2{
-  margin-top: 0;
-  margin-bottom: 0;
-height: 70px;
-width: 1.5px;
-background-color: #191919;
-position: fixed;
-top: 0;
-left: 33.5%;
 
-}
+
+
 
 
 
