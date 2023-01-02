@@ -517,3 +517,31 @@ img{
 
 
 
+
+
+
+.head_wrapper{
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+}
+
+.head_img{
+height: 200px;
+border-radius: 1rem;
+margin: auto;
+transform-origin: center;
+overflow: hidden;
+
+}
+
+.head_img:hover img{
+width: 102%;
+margin: auto;
+transform-origin: center;
+}
