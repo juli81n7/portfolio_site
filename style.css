@@ -32,17 +32,21 @@ h2{
   font-family: roc-grotesk,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
+  font-size: 3rem;
+  margin-top: 2rem;
   margin-left: 1rem;
 }
+
+h3{
+  margin-left: 1rem;
+}
+
+
 
 /********Knap******/
 
   
-
-a button{
+button{
   display: flex;
 padding: 0.6rem 1rem 0.6rem 1rem;
 text-align: center;
@@ -59,11 +63,15 @@ color: #191919;
   transition: 0.2s ease;
 cursor: pointer;
 margin-top: 1rem;
+margin-left: 1rem;
 }
 
 button:hover{
   background-color: #191919; 
   padding-right: 1rem;
+}
+
+button a:hover{
   color: #f7f6f1;
 }
 
@@ -78,6 +86,7 @@ visibility: hidden;
 
 button :hover svg{
   visibility:visible;
+
 }
 
   
@@ -117,7 +126,7 @@ transition: 0.5s;
   }
   
   .navbar {
-    min-height: 70px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,12 +145,15 @@ transition: 0.5s;
   }
   
   .nav-branding {
-    font-family: roc-grotesk-extrawide,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2rem;
+   width: 2.5rem;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
     padding-right: 2rem;
-color: #191919;
+  }
+
+  .nav-branding img:hover{
+   rotate: 45deg;
+    transition: 0.7 ease;
   }
 
   
@@ -209,15 +221,19 @@ color: #191919;
       transform: translateY(-8px)  rotate(-45deg); 
 
     }
+
+   
   
     .nav-menu {
+  
       position: fixed;
       transform: translatex();
       left: -130%;
-      top: 50px;
+      top: 71px;
       gap: 0;
       flex-direction: column;
-      background-color:#191919;
+      background-color: transparent;
+      backdrop-filter: blur(16px);
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -246,18 +262,59 @@ color: #191919;
 
 
 
-
 .heading_img_wrapper{
   height: 660px;
   overflow: hidden;
-
+background-color: #191919;
+margin-left: 1rem;
+margin-right: 1rem;
+margin-top: 6rem;
+border-radius: 2rem;
+display: flex;
+justify-content: center;
+background-image: url(profil_placeholder.png);
+background-size: cover;
+background-position-x: center;
 }
+
+
+.display{
+animation-name: display;
+animation-duration: 3s;
+animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+animation-iteration-count: 1;
+}
+
+
+@keyframes display{
+  from{
+    height: 0px;
+  } 
+    to{
+      height:660px;
+    }
+  }
+
+
+
 
 .heading_img_wrapper img{
-width: 34%;
-height: 100%;
+width: 35%;
+animation-name: rotate;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 
 }
+
+@keyframes rotate{
+  to{
+rotate: 360deg;
+  }
+}
+
+
+
 .heading_wrapper{
   overflow: hidden;
   height: 160px;
@@ -414,24 +471,33 @@ left: 17%;
 
 
 
+.overskrift{
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
 
 
 
 
 .tema{
-  margin-top: 5rem;
+  margin-top: 1rem;
   border-bottom: #191919 solid 1.5px;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   width: 100%;
 
 }
 
 
+.tema h2{
+  font-size: 2rem;
+}
+
 .tema p{
   font-family: roc-grotesk,sans-serif;
 
   margin-right: 5rem;
-  margin-top: -2.4rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
@@ -449,7 +515,7 @@ left: 17%;
 .right h3{
   text-align: left;
   font-family: roc-grotesk,sans-serif; 
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 
 }
 
@@ -471,7 +537,8 @@ margin: 0;
   display: flex;
 justify-content: end;
 gap: 1rem;
-margin-right: 5rem;
+margin-right: 2rem;
+height: 100%;
 }
 
 .categories :hover{
@@ -485,18 +552,25 @@ transition: 0.2s ease;
 overflow: hidden;
 transition: 0.2s;
 background-color: #191919;
-display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
+  height: 300px;
   border-radius: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
 
 .img_container :hover {
   scale: 1.1;
   transition: 0.2s;
 cursor: pointer;
 }
+.img_container img{
+  width: 100%;
+position: relative;
+top: 10%;
+left: 8%;
+}
+
 
 img{
   transition: 0.2s ease;
@@ -566,7 +640,7 @@ transform-origin: center;
     left: 50%;
     top: 15%;
   rotate: -20deg;
-    width: 90%;
+    width: 20%;
     padding-bottom: 2rem;
     
   }
@@ -574,6 +648,19 @@ transform-origin: center;
   .item :hover img{
     rotate: 0deg;
     left: 30%;
+  }
+
+
+  .item {
+    flex-shrink: 0;
+    align-items: start;
+    aspect-ratio: 50 / 30;  
+    font-size: 2rem;
+    overflow: hidden;
+    cursor:url(move_white.svg),auto;
+    border-radius: 15px;
+
+
   }
 
 }
