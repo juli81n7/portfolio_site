@@ -2,6 +2,10 @@
 margin: 0;
 }
 
+html{
+  --primary:#f7f6f1;
+  --secondary:#191919;
+}
 
 img{
     width: 100%;
@@ -9,15 +13,17 @@ box-sizing: border-box;
 }
 
 body{
-    background-color: #f7f6f1;
+    background-color: var(--primary);
     height: 3000px;
     margin: 0;
   
 }
 
+
+
   
 h1{
-  color: #191919;
+  color:  var(--secondary);
   font-family: roc-grotesk,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -28,7 +34,7 @@ margin: auto;
 
 
 h2{
-  color: #191919;
+  color:  var(--secondary);
   font-family: roc-grotesk,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -54,8 +60,8 @@ font-family: roc-grotesk,sans-serif;
 font-weight: 400;
 font-size: 1rem;
 background-color: transparent;
-border: #191919 solid 1.5px;
-color: #191919;
+border:  var(--secondary) solid 1.5px;
+color:  var(--secondary);
   padding: 0.4rem;
   padding-left: 1rem;
   padding-right: 0rem;
@@ -67,12 +73,12 @@ margin-left: 1rem;
 }
 
 button:hover{
-  background-color: #191919; 
+  background-color:  var(--secondary); 
   padding-right: 1rem;
 }
 
 button a:hover{
-  color: #f7f6f1;
+  color: var(--primary);
 }
 
 a svg{
@@ -94,7 +100,7 @@ button :hover svg{
 /********Header******/
 
 header {
-    background-color:#f7f6f1;
+    background-color:var(--primary);
     position: fixed;
     width: 100%;
     top: 0;
@@ -106,21 +112,21 @@ header {
     font-family: roc-grotesk,sans-serif;
     font-weight: 400;
     font-style: normal;
-    color:#191919;
+    color: var(--secondary);
     font-size: 1.2rem;
   
   }
 
   li :hover{
     transition: 2s ease;
-border-bottom: #191919 solid 5px;
+border-bottom:  var(--secondary) solid 5px;
 transition: 0.5s;
   }
 
   
   
   a {
-    color:#191919;
+    color: var(--secondary);
     text-decoration: none;
 
   }
@@ -131,7 +137,7 @@ transition: 0.5s;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    border-bottom: #191919 solid 1.5px;
+    border-bottom:  var(--secondary) solid 1.5px;
 
   }
   
@@ -177,7 +183,7 @@ transition: 0.5s;
       font-family: roc-grotesk-extrawide,sans-serif;
     font-weight: 100;
       font-style: normal;
-      color:#f7f6f1;
+      color:var(--primary);
       font-size: 2rem;
     }
   
@@ -188,7 +194,7 @@ transition: 0.5s;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: #191919;
+      background-color:  var(--secondary);
     }
     .bar2 {
       display: block;
@@ -197,7 +203,7 @@ transition: 0.5s;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: #191919;
+      background-color:  var(--secondary);
     }
     .bar3 {
       display: block;
@@ -206,7 +212,7 @@ transition: 0.5s;
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: #191919;
+      background-color:  var(--secondary);
     }
   
     .bar2.active {
@@ -245,7 +251,7 @@ transition: 0.5s;
     }
   
     .nav-item a {
-      color: #f7f6f1;
+      color: var(--primary);
     }
   
 
@@ -265,7 +271,7 @@ transition: 0.5s;
 .heading_img_wrapper{
   height: 660px;
   overflow: hidden;
-background-color: #191919;
+background-color:  var(--secondary);
 margin-left: 1rem;
 margin-right: 1rem;
 margin-top: 6rem;
@@ -319,8 +325,8 @@ rotate: 360deg;
   overflow: hidden;
   height: 160px;
   width: 100%;
-  border-bottom: #191919 solid 1.5px;
-  border-top: #191919 solid 1.5px;
+  border-bottom:  var(--secondary) solid 1.5px;
+  border-top:  var(--secondary) solid 1.5px;
 padding: 0;
 }
 
@@ -357,7 +363,7 @@ animation-duration: 5s;
 }
 
 section{
-  border-bottom: #191919 solid 1.5px;
+  border-bottom:  var(--secondary) solid 1.5px;
 }
     
   
@@ -383,10 +389,10 @@ section{
 
 
 .one{
-  background-color:#191919;
+  background-color: var(--secondary);
 }
 .second{
-background-color: #769acf;
+background-color: #1b2636;
     background-size: cover;
     background-position: center;
 
@@ -400,12 +406,13 @@ background-color: #769acf;
 }
 .fourth{
     background-image: url(projekt_4.png);
+    background-color: #1b2636;
     background-size: cover;
     background-position: center;
 
 }
-.fith{
-    background-image: url(projekt_5.png);
+.fith{  
+    background-color: #1b2636;
     background-size: cover;
     background-position: center;
 }
@@ -425,7 +432,9 @@ background-color: #769acf;
     }
 
 
-
+.last{
+  padding-right: 1rem;
+}
 
 
 
@@ -441,7 +450,7 @@ left: 17%;
   .item h3{
     margin: 0;
     font-size: 1.5rem;
-        color:#f7f6f1;
+        color:var(--primary);
         font-family: roc-grotesk,sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -452,7 +461,7 @@ left: 17%;
 
 
 .item p{
-  color:#f7f6f1;
+  color:var(--primary);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
     font-size: 1rem;
@@ -461,7 +470,6 @@ left: 17%;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
-
 
 
 
@@ -483,7 +491,7 @@ left: 17%;
 
 .tema{
   margin-top: 1rem;
-  border-bottom: #191919 solid 1.5px;
+  border-bottom:  var(--secondary) solid 1.5px;
   padding-bottom: 2rem;
   width: 100%;
 
@@ -521,7 +529,7 @@ left: 17%;
 
 
 .categories p{
-  border: #191919 solid 1.5px;
+  border:  var(--secondary) solid 1.5px;
   padding: 0.4rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -543,7 +551,7 @@ height: 100%;
 
 .categories :hover{
   color: #f7f6f1;
-  background-color: #191919;
+  background-color:  var(--secondary);
 transition: 0.2s ease;
 }
 
@@ -551,7 +559,7 @@ transition: 0.2s ease;
 .img_container{
 overflow: hidden;
 transition: 0.2s;
-background-color: #191919;
+background-color:  var(--secondary);
   height: 300px;
   border-radius: 1rem;
   margin-left: 1rem;
@@ -581,8 +589,6 @@ img{
 .pin{
   width: 150%;
 }
-
-
 
 
 
@@ -635,19 +641,20 @@ transform-origin: center;
   .left{
     margin-left: 5rem;
   }
-  .image_container img{
+  .image_container .phone{
     position: relative;
     left: 50%;
-    top: 15%;
-  rotate: -20deg;
-    width: 20%;
+    top: 50%;
+  rotate: 0deg;
+    width: 50%;
     padding-bottom: 2rem;
     
   }
   
-  .item :hover img{
-    rotate: 0deg;
-    left: 30%;
+  .item :hover .phone{
+    rotate: -20deg;
+top: 40%;
+left: 45%;
   }
 
 

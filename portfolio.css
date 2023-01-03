@@ -1,10 +1,8 @@
 h1{
     margin-top: 70px;
-    font-size: 7rem;
 }
 
 .headline_wrapper{
-    border-bottom: #191919 solid 1.5px;
     height: 800px;
     overflow: hidden;
     width: 100%;
@@ -16,52 +14,24 @@ h1{
     display: flex;
 overflow: hidden;
 
+}
+
+.tema_indhold{
+display: block;
+}
+
+.left{
+margin-left: 1rem;
+margin-right: 1rem;
 
 }
 
-.headline h1{
-    display: flex;
-    gap: 6rem;
-}
-
-.headline h1 span{
-    position: absolute;
-    left: 100%;
-
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-}
-
-.span2{
-    animation-delay: 2.5s;
-}
-
-.span3{
-    animation-delay: 5s;
-}
-.span4{
-    animation-delay: 7.5s;
+.img_container{
+    margin: 0;
+    height: 600px;
 }
 
 
-
-
-@keyframes reel{
-    from{
-        left:100%
-    }
-    to {
-        left:-50%;
-    }
-}
-
-
-
-.overskrift{
-    overflow: hidden;
-}
 
 
 
