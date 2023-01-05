@@ -5,6 +5,7 @@ margin: 0;
 html{
   --primary:#f7f6f1;
   --secondary:#191919;
+  --border:border-bottom:  #191919 solid 1.5px;
 }
 
 img{
@@ -45,6 +46,10 @@ h2{
 
 h3{
   margin-left: 1rem;
+
+    text-align: left;
+    font-family: roc-grotesk,sans-serif; 
+    margin-top: 1rem; 
 }
 
 
@@ -101,6 +106,7 @@ button :hover svg{
 
 header {
     background-color:var(--primary);
+    position: relative;
     position: fixed;
     width: 100%;
     top: 0;
@@ -181,7 +187,7 @@ transition: 0.5s;
     li {
       list-style: none;
       font-family: roc-grotesk-extrawide,sans-serif;
-    font-weight: 100;
+      font-weight: 100;
       font-style: normal;
       color:var(--primary);
       font-size: 2rem;
@@ -278,7 +284,7 @@ margin-top: 6rem;
 border-radius: 2rem;
 display: flex;
 justify-content: center;
-background-image: url(profil_placeholder.png);
+background-image: url(profil_placeholder.jpg);
 background-size: cover;
 background-position-x: center;
 }
@@ -413,11 +419,12 @@ background-color: #1b2636;
 }
 .fith{  
     background-color: #1b2636;
+    background-image: url(zielinskis.png);
     background-size: cover;
     background-position: center;
 }
 .six{
-    background-image: url(projekt_6.png);
+    background-image: url(pilotsite.JPG);
     background-size: cover;
     background-position: center;
 }
@@ -444,7 +451,7 @@ background-color: #1b2636;
     rotate: -10deg;
 left: 17%;
     width: 80%;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     
   }
   .item h3{
@@ -460,9 +467,9 @@ left: 17%;
       }
 
 
-.item p{
-  color:var(--primary);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+p{
+  color: var(--secondary);
+  font-family: roc-grotesk,sans-serif;
     font-weight: 100;
     font-size: 1rem;
     user-select: none;
@@ -520,12 +527,6 @@ left: 17%;
   text-align: left;
 }
 
-.right h3{
-  text-align: left;
-  font-family: roc-grotesk,sans-serif; 
-  margin-top: 1rem;
-
-}
 
 
 .categories p{
@@ -549,6 +550,12 @@ margin-right: 2rem;
 height: 100%;
 }
 
+
+
+.text_cream{
+  color: var(--primary);
+}
+
 .categories :hover{
   color: #f7f6f1;
   background-color:  var(--secondary);
@@ -560,10 +567,8 @@ transition: 0.2s ease;
 overflow: hidden;
 transition: 0.2s;
 background-color:  var(--secondary);
-  height: 300px;
+  height: 600px;
   border-radius: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 
@@ -572,7 +577,7 @@ background-color:  var(--secondary);
   transition: 0.2s;
 cursor: pointer;
 }
-.img_container img{
+.phone{
   width: 100%;
 position: relative;
 top: 10%;
@@ -639,7 +644,7 @@ transform-origin: center;
   }
   
   .left{
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
   .image_container .phone{
     position: relative;
@@ -670,4 +675,41 @@ left: 45%;
 
   }
 
+}
+
+
+
+/*******Om mig********/
+.om_mig{
+  margin-top: 85px;
+  padding-bottom: 2rem;
+}
+
+.grid_1_1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+}
+
+.profil_img{
+background-image: url(profil_placeholder.jpg);
+}
+
+.profil{
+  background-image: url(profil_placeholder.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline{
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 800px;
+width: 100%;
+}
+
+.linje{
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
 }
