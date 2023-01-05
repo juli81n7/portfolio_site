@@ -150,3 +150,11 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
 }
+
+
+.header_img_projekt{
+    position: inherit;
+    width: 20%;
+  
+  }
+  

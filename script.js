@@ -1,10 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const bubbles = document.querySelector(".bubble");
+
 const bar1 = document.querySelector(".bar1");
 const bar2 = document.querySelector(".bar2");
 const bar3 = document.querySelector(".bar3");
-
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -20,6 +19,44 @@ hamburger.addEventListener("click", () => {
       navMenu.classList.remove("active");
     })
   );
+
+
+const arrow1 = document.querySelector(".arrow_down_1")
+const dropdown = document.querySelector(".dropdown_content_1")
+
+arrow1.addEventListener("click", () => {
+    dropdown.classList.toggle("hide");
+    arrow1.classList.toggle("active_arrow");
+});
+
+
+const arrow2 = document.querySelector(".arrow_down_2")
+const dropdown2 = document.querySelector(".dropdown_content_2")
+
+
+
+arrow2.addEventListener("click", () => {
+    dropdown2.classList.toggle("hide");
+    arrow2.classList.toggle("active_arrow")
+});
+
+
+
+const btn = document.querySelector(".btn_link")
+const link_arrow = document.querySelector(".link_arrow") 
+
+
+btn.addEventListener("mouseover", () => {
+    console.log("djhkfjdsfk")
+link_arrow.classList.toggle("hide_1");
+
+
+});
+
+
+
+
+
   
 
 window.onscroll = function () {
