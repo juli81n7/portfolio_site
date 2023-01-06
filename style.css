@@ -59,6 +59,8 @@ h3{
 
 /********Knap******/
 
+
+
   
 button{
   display: flex;
@@ -78,6 +80,11 @@ color:  var(--secondary);
 cursor: pointer;
 margin-top: 1rem;
 margin-left: 1rem;
+fill: #191919;
+}
+
+a{
+  cursor: pointer;
 }
 
 button:hover{
@@ -86,8 +93,27 @@ button:hover{
 
 button a:hover{
   color: var(--primary);
+
 }
 
+button.se_alle .link_arrow svg polygon {
+  fill: var(--secondary); 
+
+}
+
+button.se_alle .link_arrow svg line {
+
+  stroke: var(--secondary);
+}
+button.se_alle:hover .link_arrow svg polygon {
+  fill: var(--primary);
+
+}
+
+button.se_alle:hover .link_arrow svg line {
+
+  stroke: var(--primary);
+}
 
 
 a svg{
@@ -96,10 +122,11 @@ a svg{
   margin-left: -3.5rem;
   margin-bottom: -3.7rem;
   margin-right: -3.7rem;
-visibility: hidden;
+  fill: var(--secondary);
+
 }
 button:hover svg{
-  visibility:visible;
+fill: var(--primary);
 
 }
 button:hover .link_arrow svg defs{
@@ -360,6 +387,10 @@ background-color: #1b2636;
     justify-content: end;
     }
 
+.item_png{
+  z-index: 1;
+}
+
 
 .last{
   padding-right: 1rem;
@@ -400,6 +431,10 @@ p{
     margin-left: 1rem;
 }
 
+
+.item .text_container{
+  z-index: 10;
+}
 
 
 
@@ -583,6 +618,15 @@ top: 40%;
 left: 45%;
   }
 
+
+  .img_1{
+    position: relative;
+    left: 50%;
+    top: 50%;
+  rotate: 0deg;
+    width: 50%;
+    padding-bottom: 2rem;
+  }
 
   .item {
     flex-shrink: 0;
