@@ -5,7 +5,7 @@ margin: 0;
 html{
   --primary:#f7f6f1;
   --secondary:#191919;
-  --border:border-bottom:  #191919 solid 1.5px;
+  --border:  #191919 solid 1.5px;
 }
 
 img{
@@ -117,7 +117,8 @@ button.se_alle:hover .link_arrow svg line {
 
 a svg{
   margin-top: -3.5rem;
-  rotate: 135deg;
+  transform: rotate(135deg) ;
+  
   margin-left: -3.5rem;
   margin-bottom: -3.7rem;
   margin-right: -3.7rem;
@@ -198,13 +199,14 @@ transition: 0.5s;
   }
 
   .nav-branding img:hover{
-   rotate: 45deg;
-    transition: 0.7 ease;
+    transform: rotate(45deg) ;
+  
+    transition: 0.7s ease;
   }
 
   
   .nav-link {
-    transition: 0.7 ease;
+    transition: 0.7s ease;
   }
   
 
@@ -269,7 +271,7 @@ animation-timing-function: linear;
 
 @keyframes rotate{
   to{
-rotate: -360deg;
+    transform: rotate(-360deg);
   }
 }
 
@@ -400,7 +402,7 @@ background-color: #1b2636;
   .image_container img{
     position: relative;
     top: 12%;
-    rotate: -10deg;
+    transform: rotate(-10deg) ;
 left: 17%;
     width: 80%;
     margin-bottom: 2rem;
@@ -609,14 +611,14 @@ transform-origin: center;
     position: relative;
     left: 50%;
     top: 50%;
-  rotate: 0deg;
+    transform: rotate(0deg) ;
     width: 50%;
     padding-bottom: 2rem;
     
   }
   
   .item :hover .phone{
-    rotate: -20deg;
+   transform: rotate(-20deg) ;
 top: 40%;
 left: 45%;
   }
@@ -840,7 +842,6 @@ margin-bottom: 1rem;
   .nav-menu {
 
     position: fixed;
-    transform: translatex();
     left: -130%;
     top: 71px;
     gap: 1rem;
@@ -914,9 +915,6 @@ grid-template-columns: 1fr 1fr;
 
 }
 
-.side div a:hover{
-  border-bottom:  #191919 solid 2.5px; 
-}
 
 .grid_1_1_1_1 .side div a{
 
@@ -928,6 +926,7 @@ gap: 0.5rem;
 
 .link_footer{
   visibility: hidden;
+  transition: 0.1s ease-in-out;
 }
 
 
@@ -940,6 +939,7 @@ gap: 0.5rem;
 
 .side div a:hover .link_footer{
   visibility: visible;
+  transition: 0.1s ease-in-out;
 }
 
 
