@@ -40,6 +40,16 @@ arrow2.addEventListener("click", () => {
     arrow2.classList.toggle("active_arrow")
 });
 
+const arrow3 = document.querySelector(".arrow_down_3")
+const dropdown3 = document.querySelector(".dropdown_content_3")
+
+
+
+arrow3.addEventListener("click", () => {
+    dropdown3.classList.toggle("hide");
+    arrow3.classList.toggle("active_arrow")
+});
+
 
 
 const btn = document.querySelector(".btn_link")

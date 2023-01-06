@@ -98,15 +98,15 @@ a svg{
   margin-right: -3.7rem;
 visibility: hidden;
 }
-
-a svg defs{
-  fill: var(--secondary);
-}
-
 button:hover svg{
   visibility:visible;
 
 }
+button:hover .link_arrow svg defs{
+  fill: var(--secondary);
+
+}
+
 
 
 
@@ -622,7 +622,7 @@ background-image: url(profil_placeholder.jpg);
 }
 
 .profil{
-  background-image: url(profil_placeholder.jpg);
+  background-image: url(om_mig.png);
   background-size: cover;
   background-position: center;
 }
@@ -666,10 +666,17 @@ align-items: center;
 .arrow_down_1{
   margin-right: 2rem;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .arrow_down_2{
   margin-right: 2rem;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.arrow_down_3{
+  margin-right: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .cv_box svg{
@@ -686,6 +693,10 @@ align-items: center;
   transition: 0.5s ease-in-out;
 }
 .dropdown_content_2{
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.dropdown_content_3{
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
@@ -830,3 +841,4 @@ display: none;
 }
 
 }
+
