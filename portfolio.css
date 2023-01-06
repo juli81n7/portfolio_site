@@ -7,6 +7,7 @@ h1{
     overflow: hidden;
     width: 100%;
     margin-top: 50px;
+    display: none;
 }
 
 .grey_bg{
@@ -23,6 +24,18 @@ h1{
     z-index: 100;
 }
 
+
+h2{
+    margin-top: 0rem;
+}
+
+
+
+.overskrift h2{
+    margin-top:1rem;
+}
+
+
 .headline{
 display: flex;
 overflow: hidden;
@@ -31,19 +44,30 @@ overflow: hidden;
 
 .tema_indhold{
 display: block;
+margin-top: 70px;
 }
 
-.left{
-margin-left: 1rem;
-margin-right: 1rem;
+.btn_end{
+display: flex;
+justify-content: center;
 
 }
+
+.btn_end div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
 
 .img_container{
     margin: 0;
     height: 400px;
 display: flex;
 justify-content: center;
+
 }
 
 
@@ -74,10 +98,13 @@ width: 120%;
 
 
 
+
 .text_container{
     color: var(--primary);
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 2rem;
+    background-color: var(--secondary);
     
 }
 
@@ -91,7 +118,7 @@ width: 120%;
 
 .right_text p{
     text-align: right;
-    margin-right: 0rem;
+    margin: 0rem;
 }
 
 .text_section{
@@ -104,8 +131,21 @@ margin-bottom: 3rem;
 }
 
 
+.img_container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    margin-top: 0rem;
+}
 
 
+
+.haraki{
+    background-color: #bcdef5;
+}
 
 
 @media (min-width: 800px) {
@@ -116,13 +156,56 @@ margin-bottom: 3rem;
         gap: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
-        margin-top: 1rem;
+
+    }
+    .grid_1_1_1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+    .grid_1_1{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    .img_container{
+        margin: 0;
     }
     
-    
+.left{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 
-.grey_bg{
+    .tema_indhold{
+margin-top: 10rem;
+margin-bottom: 10rem;
+    }
+
+    .tema_text{
+        margin-right: 20rem;
+    }
+
+    .btn_end{
+        margin-bottom: -10rem;
+    }
+    
+
+}
+
+.prototype{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     height: 600px;
 }
 
@@ -158,3 +241,6 @@ width: 100%;
   
   }
   
+  .download svg{
+    rotate: -135deg;
+  }
