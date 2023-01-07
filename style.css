@@ -81,35 +81,60 @@ margin-top: 1rem;
 margin-left: 1rem;
 fill: #191919;
 }
+.button{
+  display: flex;
+padding: 0.6rem 1rem 0.6rem 1rem;
+text-align: center;
+font-family: roc-grotesk,sans-serif;
+font-weight: 400;
+font-size: 1rem;
+background-color: transparent;
+border:  var(--secondary) solid 1.5px;
+color:  var(--secondary);
+  padding: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  transition: 0.2s ease;
+cursor: pointer;
+margin-top: 1rem;
+margin-left: 1rem;
+fill: #191919;
+}
 
 a{
   cursor: pointer;
 }
 
-button:hover{
+.button:hover{
   background-color:  var(--secondary); 
 }
 
-button a:hover{
+.button :hover a{
   color: var(--primary);
 
 }
 
-button.se_alle .link_arrow svg polygon {
+.button_container{
+  display: flex;
+  justify-content:start;
+}
+
+.se_alle .link_arrow svg polygon {
   fill: var(--secondary); 
 
 }
 
-button.se_alle .link_arrow svg line {
+.button.se_alle .link_arrow svg line {
 
   stroke: var(--secondary);
 }
-button.se_alle:hover .link_arrow svg polygon {
+.button.se_alle:hover .link_arrow svg polygon {
   fill: var(--primary);
 
 }
 
-button.se_alle:hover .link_arrow svg line {
+.button.se_alle:hover .link_arrow svg line {
 
   stroke: var(--primary);
 }
@@ -125,11 +150,11 @@ a svg{
   fill: var(--secondary);
 
 }
-button:hover svg{
+.button:hover svg{
 fill: var(--primary);
 
 }
-button:hover .link_arrow svg defs{
+.button:hover .link_arrow svg defs{
   fill: var(--secondary);
 
 }
