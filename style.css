@@ -688,8 +688,8 @@ background-color: var(--secondary);
 
 .cv_box{
 
-margin-right: 10rem;
-margin-left: 10rem;
+margin-right: 1rem;
+margin-left: 1rem;
   border-top:  #191919 solid 1.5px;
 }
 
@@ -783,6 +783,12 @@ margin-bottom: 1rem;
 
 
 @media (max-width: 800px) {
+
+.profil{
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
   .hamburger {
     display: block;
   }
@@ -846,10 +852,8 @@ margin-bottom: 1rem;
     top: 71px;
     gap: 1rem;
     flex-direction: column;
-
-    background-color: var(--primary);
+    background-color: var(--secondary);
     opacity: 100%;
-    backdrop-filter: blur(16px);
     width: 100%;
     text-align: center;
     transition:0.8s cubic-bezier(.77,.45,.3,1);
@@ -861,7 +865,11 @@ margin-bottom: 1rem;
   }
 
   .nav-item a {
-    color: var(--secondary);
+    color: var(--primary);
+  }
+  .nav-item a:hover {
+border: none;
+
   }
 
 
@@ -948,3 +956,10 @@ margin: auto;
 
 }
 
+
+
+.max_width{
+  max-width: 1500px;
+margin-left: auto;
+margin-right: auto;
+}
