@@ -15,6 +15,9 @@ h1{
     border-radius: 1rem;
 }
 
+.indhold{
+    margin-left: 1rem;
+}
 
 .overskrift{
     border-bottom:  var(--secondary) solid 1.5px;
@@ -23,6 +26,16 @@ h1{
     background-color: var(--primary);
     z-index: 100;
 }
+
+.overskrift .knapper{
+    display: flex;
+}
+
+.overskrift .button_container{
+    margin-right: 1rem;
+}
+
+
 
 
 h2{
@@ -94,8 +107,6 @@ width: 120%;
 .right{
     margin: 0;
 }
-
-
 
 
 
@@ -251,4 +262,12 @@ width: 100%;
     max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+  }
+
+
+  .item .text_container{
+background-color: transparent;
+margin-bottom: 0;
+width: 100%;
+margin-left: 1rem;
   }

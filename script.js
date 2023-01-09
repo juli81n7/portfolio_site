@@ -5,6 +5,21 @@ const bar1 = document.querySelector(".bar1");
 const bar2 = document.querySelector(".bar2");
 const bar3 = document.querySelector(".bar3");
 
+
+const btn = document.querySelector(".button")
+const link_arrow = document.querySelector(".link_arrow") 
+
+
+btn.addEventListener("mouseover", () => {
+    console.log("in")
+link_arrow.classList.toggle("hide_1");
+});
+btn.addEventListener("mouseout", () => {
+    console.log("out")
+link_arrow.classList.toggle("hide_1");
+});
+
+
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -52,16 +67,6 @@ arrow3.addEventListener("click", () => {
 
 
 
-const btn = document.querySelector(".btn_link")
-const link_arrow = document.querySelector(".link_arrow") 
-
-
-btn.addEventListener("mouseover", () => {
-    console.log("djhkfjdsfk")
-link_arrow.classList.toggle("hide_1");
-
-
-});
 
 
 

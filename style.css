@@ -30,7 +30,7 @@ h1{
   font-family: roc-grotesk,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 8rem;
+  font-size: 4.5rem;
 text-transform: uppercase;
 margin: auto;
 }
@@ -60,101 +60,88 @@ h3{
 
 
 
-  
-button{
-  display: flex;
-padding: 0.6rem 1rem 0.6rem 1rem;
-text-align: center;
-font-family: roc-grotesk,sans-serif;
-font-weight: 400;
-font-size: 1rem;
-background-color: transparent;
-border:  var(--secondary) solid 1.5px;
-color:  var(--secondary);
-  padding: 0.4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 20px;
-  transition: 0.2s ease;
-cursor: pointer;
-margin-top: 1rem;
-margin-left: 1rem;
-fill: #191919;
-}
 .button{
   display: flex;
+  gap: 0.3rem;
 padding: 0.6rem 1rem 0.6rem 1rem;
 text-align: center;
 font-family: roc-grotesk,sans-serif;
 font-weight: 400;
 font-size: 1rem;
-background-color: transparent;
+background-color: var(--secondary);
 border:  var(--secondary) solid 1.5px;
-color:  var(--secondary);
+color:  var(--primary);
   padding: 0.4rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 20px;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
 cursor: pointer;
-margin-top: 1rem;
-margin-left: 1rem;
-fill: #191919;
+
 }
 
 a{
   cursor: pointer;
 }
+.button_container{
+  display: flex;
+  justify-content: flex-start;
+}
 
 .button:hover{
   background-color:  var(--secondary); 
-}
-
-.button :hover a{
   color: var(--primary);
-
+overflow: hidden;
+transition: 0.5s ease;
 }
 
-.button_container{
-  display: flex;
-  justify-content:start;
+.button .text{
+  z-index: 2;
+  background-color: var(--secondary);
 }
 
-.se_alle .link_arrow svg polygon {
+
+.button .link_arrow{
+  pointer-events: none; 
+  opacity: 100%;
+  transition: 0.5s ease;
+
+
+}
+.button .link_arrow svg polygon {
   fill: var(--secondary); 
 
 }
 
-.button.se_alle .link_arrow svg line {
+.button .link_arrow svg line {
 
   stroke: var(--secondary);
 }
-.button.se_alle:hover .link_arrow svg polygon {
+
+
+.button:hover .link_arrow svg polygon {
   fill: var(--primary);
 
 }
 
-.button.se_alle:hover .link_arrow svg line {
+.button:hover .link_arrow svg line {
 
   stroke: var(--primary);
 }
 
 
+.hide_1{
+
+  margin-left: -1rem;
+
+}
+
 a svg{
   margin-top: -3.5rem;
   transform: rotate(135deg) ;
-  
   margin-left: -3.5rem;
   margin-bottom: -3.7rem;
   margin-right: -3.7rem;
-  fill: var(--secondary);
-
-}
-.button:hover svg{
-fill: var(--primary);
-
-}
-.button:hover .link_arrow svg defs{
   fill: var(--secondary);
 
 }
@@ -366,6 +353,7 @@ section{
   margin-bottom: 2rem;
   margin-top: 1rem;
 
+
 }
 
 
@@ -444,6 +432,9 @@ left: 17%;
     margin-left: 1rem;
     
       }
+      .item p{
+        color: var(--primary);
+      }
 
 
 p{
@@ -458,29 +449,16 @@ p{
 }
 
 
-.item .text_container{
+.item {
   z-index: 10;
 }
 
 
 
 
-/******* tema-section ************/
-
-
-
-.overskrift{
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-}
-
-
 
 
 .tema{
-  margin-top: 1rem;
   border-bottom:  var(--secondary) solid 1.5px;
   width: 100%;
 
@@ -502,7 +480,10 @@ p{
 
 
 
-
+.overskrift .knap{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 
 
 .right p{
@@ -513,6 +494,8 @@ p{
 
 .categories p{
   border:  var(--secondary) solid 1.5px;
+  color: var(--secondary);
+  background-color: var(--primary);
   padding: 0.4rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -526,19 +509,30 @@ margin: 0;
 
 .categories{
   display: flex;
-justify-content: end;
-gap: 1rem;
-margin-right: 2rem;
-height: 100%;
+  flex-direction:row;
+margin-left: 1rem;
+gap: 0.3rem;
 }
 
+
+
+
+.categories div{
+  display: flex;
+  gap: 0.1rem;
+}
+
+.white p{
+  border:  var(--primary) solid 1.5px;
+  color: var(--primary);
+}
 
 
 .text_cream{
   color: var(--primary);
 }
 
-.categories :hover{
+.categories div :hover{
   color: #f7f6f1;
   background-color:  var(--secondary);
 transition: 0.2s ease;
@@ -610,9 +604,19 @@ transform-origin: center;
 }
 
 
-
-
 @media (min-width: 800px) {
+
+.overskrift{
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.overskrift .knap{
+margin: 0;
+}
   .grid_1_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -988,3 +992,6 @@ margin: auto;
 margin-left: auto;
 margin-right: auto;
 }
+
+
+
